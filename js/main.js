@@ -19,6 +19,7 @@ botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
 
+
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
@@ -41,6 +42,7 @@ function cargarProductos(productosElegidos) {
 
     actualizarBotonesAgregar();
 }
+
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -81,6 +83,7 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+
     Toastify({
         text: "Producto agregado",
         duration: 3000,
